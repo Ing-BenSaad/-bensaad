@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Apprentissage</title>
+<script type="text/javascript">
+function somme()
+{
+var nb1=parseInt(document.getElementById("n1").value);
+var nb2=parseInt(document.getElementById("n2").value);
+som=nb1+nb2;
+document.getElementById("res").innerHTML="La somme donne "+som;
+}
+function moins()
+{
+var nb1=parseInt(document.getElementById("n1").value);
+var nb2=parseInt(document.getElementById("n2").value);
+som=nb1-nb2;
+document.getElementById("res").innerHTML="La difference donne "+som;
+}
+function multiplication()
+{
+var nb1=parseInt(document.getElementById("n1").value);
+var nb2=parseInt(document.getElementById("n2").value);
+som=nb1*nb2;
+document.getElementById("res").innerHTML="La multiplication donne "+som;
+}
+function division()
+{
+var nb1=parseInt(document.getElementById("n1").value);
+var nb2=parseInt(document.getElementById("n2").value);
+som=nb1/nb2;
+document.getElementById("res").innerHTML="La division donne "+som;
+}
+function puissance()
+{
+var nb1=parseInt(document.getElementById("n1").value);
+var nb2=parseInt(document.getElementById("n2").value);
+som=Math.pow(nb1,nb2);
+document.getElementById("res").innerHTML="La puissance donne "+som;
+}
+function modulo()
+{
+var nb1=parseInt(document.getElementById("n1").value);
+var nb2=parseInt(document.getElementById("n2").value);
+som=nb1%nb2;
+document.getElementById("res").innerHTML="La puissance donne "+som;
+}
+</script>
+</head>
+<body bgcolor="yellow">
+<fieldset style="margin-right:700px;"><legend>Identité</legend>
+<label> Nom : Batomene </label><br><label>Post-nom : Christ en vie</label>
+</fieldset><br><br>
+<label>Nombre 1 </label>
+<input type="text" size="20" id="n1" placeholder="Taper le premier nombre"><br><br>
+<label>Nombre 2 </label>
+<input type="text" size="20" id="n2"placeholder="Taper le deuxiem nombre"><br><br>
+<fieldset style="margin-right:1000px;"><legend>Operation</legend>
+<input type="button" value="+" onclick="somme()">
+<input type="button" value="-" onclick="moins()">
+<input type="button" value="*" onclick="multiplication()">
+<input type="button" value=":" onclick="division()">
+<input type="button" value="^" onclick="puissance()">
+<input type="button" value="%" onclick="modulo()">
+<br><br>
+</fieldset>
+<p id="res"></p>
+</body>
+</html>
